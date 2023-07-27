@@ -1,0 +1,32 @@
+.menu{
+    max-width: var(--width);
+    background-color: var(--background-green);
+    color: var(--color-white);
+    margin: 2rem 0 2rem auto;
+    
+}
+
+.listamenu a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem;
+    color: var(--color-white);
+    gap: 0.625rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: .1rem;
+}
+
+.linkmenu a:hover{
+    color: var(--color-brown);
+    background-color: var(--color-white);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.listamenu{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

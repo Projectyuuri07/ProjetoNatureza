@@ -1,0 +1,59 @@
+.naturezasecao {
+    display: flex;
+    gap: 2rem;
+}
+
+.naturezaimg-lista{
+    height: 50vh;
+    width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+.naturezaimg{
+    cursor: pointer;
+}
+
+.naturezaimg img{
+    padding-left: 30px;
+    width: 900px;
+}
+
+.naturezaimg-lista span{
+    background-color: var(--background-green);
+    color: var(--color-white);
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+
+.naturezaimg-lista::-webkit-scrollbar{
+    width: 10px;
+}
+
+.naturezaimg-lista::-webkit-scrollbar-thumb{
+    background-color: #75d2a8;
+    border-right: 2px solid #d8d8d8;
+    border-left: 2px solid #d8d8d8;
+    border-radius: 2px;
+}
+
+.naturezatexto h2{
+    color: var(--color-brown);
+    font-family: var(--font-display); 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.naturezatexto p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    max-width: 900px;
+}
+
