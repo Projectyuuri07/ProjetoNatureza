@@ -1,10 +1,10 @@
 .naturezasecao {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .naturezaimg-lista{
-    height: 50vh;
+    height: 60vh;
     width: 300px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -45,15 +45,15 @@
 .naturezatexto h2{
     color: var(--color-brown);
     font-family: var(--font-display); 
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 32px;
+    margin-bottom: 32px;
     
 }
 
 .naturezatexto p {
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 16px;
     max-width: 900px;
 }
 
