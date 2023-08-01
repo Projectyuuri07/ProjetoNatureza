@@ -154,7 +154,7 @@
         </div>
     </section>
 
-    <script>
+    <script> //Feito com a ajuda de vídeos no youtube e com o GPT
         // Função para exibir o texto correspondente à imagem clicada
         function showContent(contentId) {
             var content = document.getElementById(contentId);
@@ -193,5 +193,144 @@
             hideContent("montanhas-content");
         });
     </script>
+    
+    <h1 class="title">FAQ💬..........</h1>
+    <section class="faqsecao">
+        <ul class="faqtexto">
+            
+            <li>
+                <h3>Por que é importante explorar a natureza?</h3>
+                <p>Explorar a natureza é importante por diversos motivos. Isso nos permite reconectar com o meio ambiente, relaxar, reduzir o estresse,
+                    obter benefícios para a saúde mental e física, aprender sobre a biodiversidade e desenvolver um maior senso de apreciação e
+                    respeito pela natureza.</p>
+            </li>
+
+            <li>
+            <h3>Quais são os benefícios de explorar as montanhas?</h3>
+            <p>Explorar as montanhas oferece uma série de benefícios. Além da oportunidade de desfrutar de vistas deslumbrantes, caminhadas
+                em montanhas podem melhorar a aptidão física, fortalecer os músculos, aumentar a resistência, melhorar a circulação sanguínea
+                e proporcionar um senso de conquista pessoal.</p>
+            </li>
+
+            <li>
+                <h3>O que posso fazer para me preparar antes de explorar uma montanha?</h3>
+                <p>Antes de explorar uma montanha, é importante fazer algumas preparações. Verifique as condições meteorológicas, pesquise sobre
+                    a trilha que pretende percorrer, planeje o tempo necessário para a caminhada, verifique se possui o equipamento adequado
+                    (botas, roupas adequadas, suprimentos, etc.), informe-se sobre os regulamentos locais e deixe seu itinerário com alguém de
+                    confiança.</p>
+            </li>
+
+            <li>
+                <h3>Quais são os principais cuidados ao explorar montanhas?</h3>
+                <p>Ao explorar montanhas, é essencial ter alguns cuidados. Preste atenção às condições do tempo, leve água e alimentos suficientes,
+                    esteja ciente dos sinais de altitude e desidratação, evite caminhar sozinho(a), siga as trilhas marcadas, evite se aproximar de
+                    penhascos perigosos e esteja preparado(a) para lidar com situações de emergência.</p>
+            </li>
+
+            <li>
+                <h3>Quais são os benefícios de explorar praias?</h3>
+                <p>Explorar praias pode ser extremamente gratificante. Além de ser um local relaxante, as praias oferecem a oportunidade de nadar,
+                    praticar esportes aquáticos, fazer caminhadas na areia, desfrutar do sol e do mar, fortalecer os músculos com atividades físicas e
+                    relaxar a mente ao ouvir o som das ondas.</p>
+            </li>
+
+            <li>
+                <h3>O que devo levar ao explorar uma praia?</h3>
+                <p>Ao explorar uma praia, é útil levar alguns itens essenciais. Isso inclui protetor solar, chapéu, óculos de sol, toalhas, roupas de banho,
+                    água potável, lanches, cadeiras de praia ou toalhas de praia, brinquedos de praia (se for o caso), e uma sacola para guardar o lixo
+                    e manter a praia limpa.</p>
+            </li>
+            
+            <li>
+                <h3>Quais são os principais cuidados ao explorar praias?</h3>
+                <p>Enquanto explora praias, é importante tomar alguns cuidados. Esteja atento(a) às condições do mar, como correntezas ou ondas
+                    fortes, evite nadar sozinho(a) e sempre siga as instruções dos salva-vidas locais. Além disso, lembre-se de respeitar o ambiente,
+                    não deixando lixo na praia e não perturbando a fauna e a flora locais.</p>
+            </li>
+
+            <li>
+                <h3>Quais são os benefícios de explorar florestas?</h3>
+                <p>Explorar florestas oferece uma série de benefícios. Além da oportunidade de estar imerso(a) em um ambiente natural exuberante,
+                    as florestas permitem que você respire ar puro, experimente uma sensação de tranquilidade, observe a vida selvagem, aprenda
+                    sobre a flora e a fauna locais e desfrute de atividades como caminhadas, acampamentos e piqueniques.</p>
+            </li>
+
+            <li>
+                <h3>O que devo levar ao explorar uma floresta?</h3>
+                <p></p>
+            </li>
+
+            <li>
+                <h3>Quais são os principais cuidados ao explorar florestas?</h3>
+                <p></p>
+            </li>
+        </ul>
+
+    </section>
+
+    <script>//Feito com a ajuda de vídeos no youtube e com o GPT
+        document.addEventListener('DOMContentLoaded', function () {
+        // Obtém a lista de perguntas e respostas
+        const faqItems = document.querySelectorAll('.faqtexto li');
+
+        // Itera sobre cada item do FAQ para adicionar o evento de clique
+        faqItems.forEach((item) => {
+            const question = item.querySelector('h3');
+            const answer = item.querySelector('p');
+
+        // Adiciona o evento de clique para abrir/fechar a resposta
+        question.addEventListener('click', () => {
+            const isAnswerShown = answer.style.display === 'block';
+
+        // Fecha todas as respostas
+        faqItems.forEach((item) => {
+            const answer = item.querySelector('p');
+            answer.style.display = 'none';
+            item.querySelector('h3').classList.remove('open');
+            });
+
+        // Abre a resposta apenas se não estiver aberta
+        if (!isAnswerShown) {
+            answer.style.display = 'block';
+             question.classList.add('open');
+            }
+            });
+
+        // Fecha todas as respostas ao carregar a página
+        answer.style.display = 'none';
+        });
+    });
+
+    </script>
+
+    <h1 class="title">CONTATO📞</h1>
+    <section class="container">
+
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.313639682461!2d-46.89395748899062!3d-23.195237848156395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2697ac7191fd%3A0x300031e85e07f9e8!2sEscola%20Senai%20Conde%20Alexandre%20Siciliano!5e0!3m2!1spt-BR!2sbr!4v1690891209626!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contato">
+            <ul class="lista">
+                <li>
+                    <p>Escola Senai Conde Alexandre Siciliano</p>
+                </li>
+                <li>
+                    <p>Telefone: (11) 4523-6400</p>
+                </li>
+                <li>
+                    <p>E-mail: senaijundiai@sp.senai.br</p>
+                </li>
+            </ul>
+        </section>
+
+    </section>
+
+    <section class="footer">
+        <p>© 2023 - Todos os direitos reservados</p>
+    </section>
+
+
+
 </body>
 </html>

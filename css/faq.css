@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.faqsecao {
+    padding-left:220px ;
+    display: flex;
+    gap: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.faqtexto h3{
+    color: #814813;;
+    font-size: 20px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #D8D8D8;
+    ;
+}
+
+.faqtexto p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 16px;
+    max-width: 1168px;
+}
+
+.faqtexto h3::after {
+    content: "\25BA";
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.faqtexto p.show {
+    display: block;
+}
+
+.faqtexto h3.open::after {
+    content: "\25BC";
+}
+

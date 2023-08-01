@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    background-color: #2FA97C;
+    height: 90px ;
+    align-items: center;
+    padding: 20px;
+    max-width: var(--width);
+    background-color: var(--background-green);
+    color: var(--color-white);
+    margin: 32px 0 32px auto;
+}
