@@ -19,3 +19,7 @@
     color: var(--color-white);
     margin: 32px 0 32px auto;
 }
+
+.contato p{
+    padding: 10px;
+}
