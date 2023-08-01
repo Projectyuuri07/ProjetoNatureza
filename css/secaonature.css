@@ -1,6 +1,7 @@
 .naturezasecao {
     display: flex;
     gap: 32px;
+    padding-left: 230px;
 }
 
 .naturezaimg-lista{
@@ -17,7 +18,6 @@
 }
 
 .naturezaimg img{
-    padding-left: 30px;
     width: 900px;
 }
 
