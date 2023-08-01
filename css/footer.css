@@ -11,7 +11,7 @@
 .footer{
     display: flex;
     background-color: #2FA97C;
-    height: 90px ;
+    height: 70px ;
     align-items: center;
     padding: 20px;
     max-width: var(--width);
