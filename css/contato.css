@@ -26,3 +26,15 @@
     padding: 18px;
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .lista p {
+        padding: 12px;
+        font-size: 16px; 
+    }
+}

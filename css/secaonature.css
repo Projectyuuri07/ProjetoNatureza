@@ -1,20 +1,23 @@
 .naturezasecao {
     display: flex;
-    gap: 32px;
-    padding-left: 230px;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
 }
 
 .naturezaimg-lista{
     height: 55vh;
-    width: 300px;
+    width: 400px;
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
+    padding-left:100px ;
 }
 
 
 .naturezaimg{
     cursor: pointer;
+    position: relative;
 }
 
 .naturezaimg img{
@@ -24,7 +27,6 @@
 .naturezaimg-lista span{
     background-color: var(--background-green);
     color: var(--color-white);
-    position: absolute;
     top: 0;
     right: 0;
     

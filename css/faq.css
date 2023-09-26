@@ -52,3 +52,17 @@
     content: "\25BC";
 }
 
+@media screen and (max-width: 768px) {
+    .faqsecao {
+        padding-left: 0; 
+    }
+
+    .faqtexto h3::after {
+        content: "\25BC"; 
+    }
+
+    .faqtexto p {
+        font-size: 16px; 
+        line-height: 1.5;
+    }
+}
