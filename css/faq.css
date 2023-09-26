@@ -1,31 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
 
 .faqsecao {
-    padding-left:220px ;
+    padding-left: 200px;
     display: flex;
-    gap: 32px;
     font-family: 'Poppins', sans-serif;
 }
 
-
-.faqtexto h3{
-    color: #814813;;
+.faqtexto h3 {
+    color: #814813;
     font-size: 20px;
     margin-bottom: 32px;
     cursor: pointer;
     position: relative;
     border-bottom: 1px solid #D8D8D8;
-    ;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.faqtexto h3::after {
+    height: 100%;
+    font-size: 16px;
+    content: "\25BC"; 
+    transition: transform 0.3s ease;
 }
 
 .faqtexto p {
@@ -33,28 +37,21 @@
     line-height: 25px;
     margin-bottom: 16px;
     max-width: 1168px;
+    display: none;
 }
 
-.faqtexto h3::after {
-    content: "\25BA";
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.3s;
+.faqtexto h3.open::after {
+    transform: rotate(180deg); 
 }
+
 
 .faqtexto p.show {
     display: block;
 }
 
-.faqtexto h3.open::after {
-    content: "\25BC";
-}
-
 @media screen and (max-width: 768px) {
     .faqsecao {
-        padding-left: 0; 
+        padding-left: 0;
     }
 
     .faqtexto h3::after {
@@ -62,7 +59,7 @@
     }
 
     .faqtexto p {
-        font-size: 16px; 
+        font-size: 16px;
         line-height: 1.5;
     }
 }
