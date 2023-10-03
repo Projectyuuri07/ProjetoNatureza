@@ -41,6 +41,6 @@
     .map {
         align-items: center;
         justify-content: center;
-        width: 200px;
+        max-width: 500px;
     }
 }
