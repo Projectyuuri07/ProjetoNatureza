@@ -7,3 +7,7 @@ hideContent()
 import { toggleResposta } from "./modulo/faqinit.js";
 
 toggleResposta()
+
+import { menuMobileInit } from "./modulo/menumobileinit.js";
+
+menuMobileInit()

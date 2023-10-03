@@ -3,12 +3,13 @@
     display: flex;
     height: 70px ;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
     max-width: var(--width);
     background-color: var(--background-green);
     color: var(--color-white);
     margin: 32px 0 32px auto;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .listamenu a{
@@ -38,6 +39,17 @@
 
 }
 
+.toggle {
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #494949;
+    padding: 0.625rem;
+    border-radius: 5px;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         max-width: 100%;
@@ -63,5 +75,29 @@
         letter-spacing: 2px;
         text-align: center; 
         width: 100%; 
+    }
+
+    .toggle {
+        display: flex;
+    }
+
+    .js-list {
+        display: none;
+        animation: fadeOut .3s forwards;
+    }
+
+    .js-list.active {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-green);
+        z-index: 100;
+        animation: slideDownMenu .5s forwards;
+    }
+
+    .toggle span.active {
+        animation: slideDownMenu .5s forwards;
     }
 }
