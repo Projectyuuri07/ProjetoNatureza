@@ -86,11 +86,4 @@
         border-radius: 2px;
     }
 
-    .naturezaimg-lista span{
-        background-color: var(--background-green);
-        color: var(--color-white);
-        top: 0;
-        right: 0;
-    }
-
 }
