@@ -8,6 +8,7 @@ export function toggleResposta(pergunta) {
     }
 }
 
+// Configura um evento de clique para cada elemento com a classe "faq-pergunta"
 const faqPerguntas = document.querySelectorAll(".faq-pergunta");
 
 faqPerguntas.forEach(pergunta => {

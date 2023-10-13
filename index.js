@@ -11,3 +11,7 @@ toggleResposta()
 import { menuMobileInit } from "./modulo/menumobileinit.js";
 
 menuMobileInit()
+
+import { pegarValorForm } from "./modulo/cadastroinit.js";
+
+pegarValorForm()
