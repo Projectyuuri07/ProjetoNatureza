@@ -28,6 +28,7 @@
     color: var(--color-brown);
     background-color: var(--color-white);
     border-radius: 5px;
+    gap: 15px;
     transition: 0.3s ease-in-out;
 }
 
@@ -48,6 +49,10 @@
     letter-spacing: 0.1rem;
     font-weight: bold;
     display: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 768px) {
